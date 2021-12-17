@@ -11,10 +11,11 @@ export default function App() {
         // Normal CSS
         <div className="App">
             {/* etmotion css */}
-            <h1 className={em__tex}>Hello Etmotion CSS</h1>↑{cssView(em__tex)}
+            <h1 className={em__tex}>Hello Etmotion CSS</h1>
+            <div className="em">↑{cssView(em__tex)}</div>
             {/* etmotion css & extend */}
-            <h2 className={em__bg}>Start editing Etmotion CSS</h2>↑
-            {cssView(em__bg)}
+            <h2 className={em__bg}>Start editing Etmotion CSS</h2>
+            <div className="em">↑{cssView(em__bg)}</div>
             {/* Emotion styled */}
             <EmParam>
                 <h1>Emotion Styled</h1>
@@ -23,7 +24,7 @@ export default function App() {
                     eligendi dolores.
                 </p>
             </EmParam>
-            ↑{cssView('`<p class="css-1uvlzxd">...</p>`')}
+            <div className="em">↑{'`<div class="css-1uvlzxd">...</div>`'}</div>
             {/* css module */}
             <div className={info}>
                 <h1>CSS Module</h1>
@@ -32,7 +33,7 @@ export default function App() {
                     eligendi dolores.
                 </p>
             </div>
-            ↑{cssView(info)}
+            <div className="em">↑{cssView(info)}</div>
         </div>
     )
 }
@@ -48,7 +49,8 @@ const em__bg = css`
     padding: 0.5em;
 `
 //  Emotion styled
-const EmParam = styled.p`
+const EmParam = styled.div`
     border: 2px solid teal;
     padding: 1em 0.5em;
+    margin-bottom: 1em;
 `

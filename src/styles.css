@@ -4,3 +4,12 @@
     padding: 1em;
     color: #555555;
 }
+
+.em {
+    margin-top: -0em;
+    margin-bottom: 2em;
+    color: gray;
+    font-size: 2rem;
+    border-bottom: 2px solid turquoise;
+    display: inline-block;
+}
