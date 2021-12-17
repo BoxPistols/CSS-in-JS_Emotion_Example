@@ -11,19 +11,26 @@ export default function App() {
         // Normal CSS
         <div className="App">
             {/* etmotion css */}
-            <h1 className={em__tex}>Hello CodeSandbox</h1>↑{cssView(em__tex)}
+            <h1 className={em__tex}>Hello Etmotion CSS</h1>↑{cssView(em__tex)}
             {/* etmotion css & extend */}
-            <h2 className={em__bg}>Start editing to see some magic happen!</h2>↑
+            <h2 className={em__bg}>Start editing Etmotion CSS</h2>↑
             {cssView(em__bg)}
             {/* Emotion styled */}
             <EmParam>
-                Dicta et sit omnis enim sed et molestias adipisci et velit
-                eligendi dolores.
+                <h1>Emotion Styled</h1>
+                <p>
+                    Dicta et sit omnis enim sed et molestias adipisci et velit
+                    eligendi dolores.
+                </p>
             </EmParam>
+            ↑{cssView('`<p class="css-1uvlzxd">...</p>`')}
             {/* css module */}
             <div className={info}>
-                Dicta et sit omnis enim sed et molestias adipisci et velit
-                eligendi dolores.
+                <h1>CSS Module</h1>
+                <p>
+                    Dicta et sit omnis enim sed et molestias adipisci et velit
+                    eligendi dolores.
+                </p>
             </div>
             ↑{cssView(info)}
         </div>
@@ -42,6 +49,6 @@ const em__bg = css`
 `
 //  Emotion styled
 const EmParam = styled.p`
-    border: 1px solid teal;
+    border: 2px solid teal;
     padding: 1em 0.5em;
 `
