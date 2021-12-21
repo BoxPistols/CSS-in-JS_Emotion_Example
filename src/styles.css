@@ -1,8 +1,10 @@
 .App {
     font-family: futura, sans-serif;
     text-align: center;
-    padding: 1em;
+    padding: 2%;
+    margin: 2vh 1vw;
     color: #555555;
+    border: 4px solid dimgray;
 }
 
 .em {

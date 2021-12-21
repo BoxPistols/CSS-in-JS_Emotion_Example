@@ -1,7 +1,7 @@
+import './styles.css'
 import { css } from '@emotion/css'
 import styled from '@emotion/styled'
 import { info } from './index.module.css'
-import './styles.css'
 
 export default function App() {
     const cssView = (x) => {
